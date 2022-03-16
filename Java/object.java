@@ -1,3 +1,4 @@
+package Java;
 public class object {
   private String message;
   public object(String message)
