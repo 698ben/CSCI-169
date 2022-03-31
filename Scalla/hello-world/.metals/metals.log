@@ -1,0 +1,244 @@
+2022.03.30 20:49:00 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/lsp.trace.json or /home/ema/.cache/metals/lsp.trace.json
+2022.03.30 20:49:02 INFO  logging to file /home/ema/csci 169/Scalla/hello-world/.metals/metals.log
+2022.03.30 20:49:02 INFO  Started: Metals version 0.11.2 in workspace '/home/ema/csci 169/Scalla/hello-world' for client Visual Studio Code 1.65.2.
+2022.03.30 20:49:02 INFO  Parse release: 11.0.14.1
+2022.03.30 20:49:02 WARN  Can't instantiate JavaInteractiveSemanticdb (version: Some(JdkVersion(11,0)), jdkHome: /usr/lib/jvm/java-11-openjdk-amd64, javac exists: false)
+2022.03.30 20:49:06 INFO  time: initialize in 3.98s
+2022.03.30 20:49:07 WARN  Build server is not auto-connectable.
+2022.03.30 20:53:34 WARN  no build target for: /home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+2022.03.30 20:53:37 WARN  no build target for: /home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+Mar 30, 2022 8:53:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 21: file:///home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:630)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:621)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:359)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:1828)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 21: file:///home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 20 more
+
+2022.03.30 20:53:39 INFO  no build target found for /home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.1
+2022.03.30 20:53:42 INFO  time: code lens generation in 6.3s
+2022.03.30 20:53:42 INFO  time: code lens generation in 6.3s
+2022.03.30 20:53:42 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals1164615790881941582/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2022.03.30 20:53:42 WARN  no build target for: /home/ema/csci 169/Scalla/hello-world/project/metals.sbt
+2022.03.30 20:53:42 WARN  no build target for: /home/ema/csci 169/Scalla/hello-world/project/project/metals.sbt
+2022.03.30 20:53:42 INFO  skipping build import with status 'Started'
+2022.03.30 20:53:45 INFO  [info] welcome to sbt 1.6.2 (Ubuntu Java 11.0.14.1)
+2022.03.30 20:53:49 INFO  [info] loading global plugins from /home/ema/.sbt/1.0/plugins
+2022.03.30 20:53:54 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...
+2022.03.30 20:53:54 INFO  [info] loading project definition from /home/ema/csci 169/Scalla/hello-world/project/project
+2022.03.30 20:54:03 INFO  [info] loading settings for project hello-world-build from metals.sbt ...
+2022.03.30 20:54:03 INFO  [info] loading project definition from /home/ema/csci 169/Scalla/hello-world/project
+2022.03.30 20:54:08 INFO  [success] Generated .bloop/hello-world-build.json
+2022.03.30 20:54:08 INFO  [success] Total time: 4 s, completed Mar 30, 2022, 8:54:08 PM
+2022.03.30 20:54:10 INFO  [info] loading settings for project hello-world from build.sbt ...
+2022.03.30 20:54:10 INFO  [info] set current project to hello-world (in build file:/home/ema/csci%20169/Scalla/hello-world/)
+2022.03.30 20:54:12 INFO  [success] Generated .bloop/hello-world.json
+2022.03.30 20:54:12 INFO  [success] Generated .bloop/hello-world-test.json
+2022.03.30 20:54:12 INFO  [success] Total time: 1 s, completed Mar 30, 2022, 8:54:12 PM
+2022.03.30 20:54:13 INFO  time: ran 'sbt bloopInstall' in 31s
+2022.03.30 20:54:13 INFO  Attempting to connect to the build server...
+2022.03.30 20:54:19 WARN  no build target for: /home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+Mar 30, 2022 8:54:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 21: file:///home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:630)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:621)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:359)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:1828)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 21: file:///home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 20 more
+
+2022.03.30 20:54:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 20:54:30 WARN  no build target for: /home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+2022.03.30 20:54:31 INFO  Attempting to connect to the build server...
+2022.03.30 20:54:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/project/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 20:54:39 INFO  time: Connected to build server in 25s
+2022.03.30 20:54:39 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.30 20:54:39 INFO  time: Imported build in 0.14s
+2022.03.30 20:54:40 INFO  compiling hello-world (1 scala source)
+2022.03.30 20:54:45 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2022.03.30 20:54:53 INFO  time: indexed workspace in 13s
+2022.03.30 20:55:01 INFO  time: compiled hello-world in 20s
+2022.03.30 20:56:25 INFO  Disconnecting from Bloop session...
+2022.03.30 20:56:25 INFO  Shut down connection with build server.
+2022.03.30 20:56:25 INFO  Shut down connection with build server.
+2022.03.30 20:56:25 INFO  Attempting to connect to the build server...
+2022.03.30 20:56:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 20:56:25 INFO  Attempting to connect to the build server...
+2022.03.30 20:56:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/project/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 20:56:25 INFO  time: Connected to build server in 0.17s
+2022.03.30 20:56:25 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.30 20:56:27 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2022.03.30 20:56:27 INFO  time: indexed workspace in 2.21s
+Mar 30, 2022 8:56:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 21: file:///home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:630)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:621)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:359)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:1828)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 21: file:///home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 20 more
+
+2022.03.30 20:57:13 INFO  compilation cancelled
+Mar 30, 2022 8:58:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 65
+2022.03.30 20:58:33 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/dap-server.trace.json or /home/ema/.cache/metals/dap-server.trace.json
+2022.03.30 20:58:56 INFO  compilation cancelled
+2022.03.30 20:58:57 INFO  compilation cancelled
+2022.03.30 20:58:58 INFO  Disconnecting from Bloop session...
+2022.03.30 20:58:58 INFO  Shut down connection with build server.
+2022.03.30 20:58:58 INFO  Shut down connection with build server.
+2022.03.30 20:58:58 INFO  Attempting to connect to the build server...
+2022.03.30 20:59:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 20:59:01 INFO  Attempting to connect to the build server...
+2022.03.30 20:59:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/project/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 20:59:01 INFO  time: Connected to build server in 3.71s
+2022.03.30 20:59:01 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.30 20:59:02 INFO  time: Imported build in 0.24s
+2022.03.30 20:59:04 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2022.03.30 20:59:04 INFO  time: indexed workspace in 1.87s
+2022.03.30 20:59:05 INFO  compiling hello-world (1 scala source)
+2022.03.30 20:59:11 INFO  time: compiled hello-world in 5.66s
+Mar 30, 2022 9:00:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67
+Mar 30, 2022 9:00:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72
+2022.03.30 21:00:19 INFO  shutting down Metals
+2022.03.30 21:00:19 INFO  Shut down connection with build server.
+2022.03.30 21:00:19 INFO  Shut down connection with build server.
+2022.03.30 21:00:48 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/lsp.trace.json or /home/ema/.cache/metals/lsp.trace.json
+2022.03.30 21:00:48 INFO  logging to file /home/ema/csci 169/Scalla/hello-world/.metals/metals.log
+2022.03.30 21:00:48 INFO  Started: Metals version 0.11.2 in workspace '/home/ema/csci 169/Scalla/hello-world' for client Visual Studio Code 1.65.2.
+2022.03.30 21:00:48 INFO  Parse release: 11.0.14.1
+2022.03.30 21:00:48 WARN  Can't instantiate JavaInteractiveSemanticdb (version: Some(JdkVersion(11,0)), jdkHome: /usr/lib/jvm/java-11-openjdk-amd64, javac exists: false)
+2022.03.30 21:00:51 INFO  time: initialize in 2.47s
+2022.03.30 21:00:52 INFO  Attempting to connect to the build server...
+2022.03.30 21:00:52 INFO  skipping build import with status 'Installed'
+2022.03.30 21:00:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 21:00:52 INFO  Attempting to connect to the build server...
+2022.03.30 21:00:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/project/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 21:00:52 INFO  time: Connected to build server in 1.11s
+2022.03.30 21:00:52 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.30 21:00:52 INFO  time: Imported build in 0.18s
+2022.03.30 21:01:00 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2022.03.30 21:01:00 INFO  time: indexed workspace in 7.47s
+2022.03.30 21:01:37 INFO  Disconnecting from Bloop session...
+2022.03.30 21:01:37 INFO  Shut down connection with build server.
+2022.03.30 21:01:37 INFO  Shut down connection with build server.
+2022.03.30 21:01:37 INFO  Attempting to connect to the build server...
+2022.03.30 21:01:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 21:01:37 INFO  Attempting to connect to the build server...
+2022.03.30 21:01:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/project/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.03.30 21:01:38 INFO  time: Connected to build server in 0.27s
+2022.03.30 21:01:38 INFO  Connected to Build server: Bloop v1.4.13
+2022.03.30 21:01:39 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2022.03.30 21:01:39 INFO  time: indexed workspace in 1.88s
+2022.03.30 21:02:06 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/dap-server.trace.json or /home/ema/.cache/metals/dap-server.trace.json
+2022.03.30 21:02:06 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/dap-client.trace.json or /home/ema/.cache/metals/dap-client.trace.json
+2022.03.30 21:02:06 INFO  Starting debug proxy for [Main]
+2022.03.30 21:02:07 INFO  Trying to attach to remote debuggee VM view-localhost:40135 .
+2022.03.30 21:02:07 INFO  Attaching to debuggee VM succeeded.
+2022.03.30 21:02:07 INFO  Canceling debug proxy for [Main]
+2022.03.30 21:02:07 INFO  Closing debug server tcp://0.0.0.0:39249
+Mar 30, 2022 9:02:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 30, 2022 9:03:05 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.03.30 21:03:07 INFO  Deduplicating compilation of hello-world from bsp client 'Metals 0.11.2' (since 1m 29.3s)
+2022.03.30 21:03:07 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/dap-server.trace.json or /home/ema/.cache/metals/dap-server.trace.json
+2022.03.30 21:03:07 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/dap-client.trace.json or /home/ema/.cache/metals/dap-client.trace.json
+2022.03.30 21:03:07 INFO  Starting debug proxy for [Main]
+2022.03.30 21:03:07 INFO  Trying to attach to remote debuggee VM view-localhost:59017 .
+2022.03.30 21:03:07 INFO  Attaching to debuggee VM succeeded.
+2022.03.30 21:03:07 INFO  Canceling debug proxy for [Main]
+2022.03.30 21:03:08 INFO  Closing debug server tcp://0.0.0.0:43517
+2022.03.30 21:03:39 INFO  shutting down Metals
+2022.03.30 21:03:39 INFO  Shut down connection with build server.
+2022.03.30 21:03:39 INFO  Shut down connection with build server.
