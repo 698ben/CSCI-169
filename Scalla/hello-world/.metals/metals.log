@@ -862,3 +862,159 @@ Caused by: java.net.URISyntaxException: Illegal character in path at index 21: f
 2022.03.30 21:14:12 INFO  time: code lens generation in 2.15s
 Mar 30, 2022 9:14:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2022.03.30 21:15:51 INFO  shutting down Metals
+2022.03.30 21:15:51 INFO  Shut down connection with build server.
+2022.03.30 21:15:51 INFO  Shut down connection with build server.
+2022.04.01 20:56:01 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/lsp.trace.json or /home/ema/.cache/metals/lsp.trace.json
+2022.04.01 20:56:03 INFO  logging to file /home/ema/csci 169/Scalla/hello-world/.metals/metals.log
+2022.04.01 20:56:03 INFO  Started: Metals version 0.11.2 in workspace '/home/ema/csci 169/Scalla/hello-world' for client Visual Studio Code 1.65.2.
+2022.04.01 20:56:03 INFO  Parse release: 11.0.14.1
+2022.04.01 20:56:03 WARN  Can't instantiate JavaInteractiveSemanticdb (version: Some(JdkVersion(11,0)), jdkHome: /usr/lib/jvm/java-11-openjdk-amd64, javac exists: false)
+2022.04.01 20:56:08 INFO  time: initialize in 5.09s
+2022.04.01 20:56:10 INFO  Attempting to connect to the build server...
+2022.04.01 20:56:10 INFO  skipping build import with status 'Installed'
+Apr 01, 2022 8:56:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2022.04.01 20:56:18 INFO  shutting down Metals
+2022.04.01 20:56:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.04.01 20:56:25 INFO  Attempting to connect to the build server...
+2022.04.01 20:56:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ema/csci 169/Scalla/hello-world/project/.metals/bsp.trace.json or /home/ema/.cache/metals/bsp.trace.json
+2022.04.01 20:56:25 INFO  time: Connected to build server in 15s
+2022.04.01 20:56:25 INFO  Connected to Build server: Bloop v1.4.13
+2022.04.01 20:56:29 INFO  no build target found for /home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.1
+2022.04.01 20:56:29 INFO  time: code lens generation in 11s
+2022.04.01 20:56:30 INFO  time: Imported build in 0.27s
+2022.04.01 20:56:33 INFO  no build target found for /home/ema/csci 169/Scalla/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.1
+Apr 01, 2022 8:56:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireStreamClosed
+INFO: The input stream was closed.
+java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.SourceChannelImpl.endRead(SourceChannelImpl.java:241)
+	at java.base/sun.nio.ch.SourceChannelImpl.read(SourceChannelImpl.java:259)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:59)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:107)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:101)
+	at java.base/java.io.InputStream.read(InputStream.java:205)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:81)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Apr 01, 2022 8:56:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireStreamClosed
+INFO: The input stream was closed.
+java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.SourceChannelImpl.endRead(SourceChannelImpl.java:241)
+	at java.base/sun.nio.ch.SourceChannelImpl.read(SourceChannelImpl.java:259)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:59)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:107)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:101)
+	at java.base/java.io.InputStream.read(InputStream.java:205)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:81)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022.04.01 20:56:33 INFO  time: code lens generation in 14s
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@609cb81c rejected from java.util.concurrent.ThreadPoolExecutor@69f01db8[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 117]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@225ba43e rejected from java.util.concurrent.ThreadPoolExecutor@69f01db8[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 118]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:372)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:371)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:379)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:33)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:31)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:379)
+	at scala.concurrent.Future.map(Future.scala:292)
+	at scala.concurrent.Future.map$(Future.scala:292)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:379)
+	at scala.concurrent.Future$.apply(Future.scala:659)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2405)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2403)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-1-thread-7" java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:243)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at coursierapi.shaded.scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at coursierapi.shaded.scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at coursierapi.shaded.scala.concurrent.Await$.result(package.scala:124)
+	at coursierapi.shaded.coursier.Fetch$FetchTaskOps$.eitherResult$extension(Fetch.scala:327)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.doFetch(ApiHelper.scala:334)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper.doFetch(ApiHelper.scala)
+	at coursierapi.Fetch.fetchResult(Fetch.java:244)
+	at coursierapi.Fetch.fetch(Fetch.java:239)
+	at scala.meta.internal.metals.Embedded$.downloadDependency(Embedded.scala:238)
+	at scala.meta.internal.metals.Embedded$.downloadMtags(Embedded.scala:277)
+	at scala.meta.internal.metals.MtagsResolver$Default.fetch$1(MtagsResolver.scala:40)
+	at scala.meta.internal.metals.MtagsResolver$Default.$anonfun$resolve$3(MtagsResolver.scala:65)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1908)
+	at scala.meta.internal.metals.MtagsResolver$Default.resolve(MtagsResolver.scala:63)
+	at scala.meta.internal.metals.MtagsResolver.isSupportedScalaVersion(MtagsResolver.scala:13)
+	at scala.meta.internal.metals.MtagsResolver.isSupportedScalaVersion$(MtagsResolver.scala:12)
+	at scala.meta.internal.metals.MtagsResolver$Default.isSupportedScalaVersion(MtagsResolver.scala:20)
+	at scala.meta.internal.troubleshoot.ProblemResolver.isSupportedScalaVersion$1(ProblemResolver.scala:179)
+	at scala.meta.internal.troubleshoot.ProblemResolver.findProblem(ProblemResolver.scala:182)
+	at scala.meta.internal.troubleshoot.ProblemResolver.$anonfun$problemMessage$1(ProblemResolver.scala:63)
+	at scala.collection.immutable.List.flatMap(List.scala:366)
+	at scala.meta.internal.troubleshoot.ProblemResolver.problemMessage(ProblemResolver.scala:62)
+	at scala.meta.internal.metals.Doctor.check(Doctor.scala:135)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$connectToNewBuildServer$8(MetalsLanguageServer.scala:2278)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$2(MetalsLanguageServer.scala:2471)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2453)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2403)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2403)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)

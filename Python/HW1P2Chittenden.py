@@ -1,18 +1,15 @@
-from jinja2 import Undefined
-
-
 def reports(xs):
   ans = ""
-  name = [Undefined,Undefined,Undefined]
+  name = []
   sum = 0 
   total = 0
   count = 0
   for i in xs:
     if(type(i) == str):
-      name[count] = i
+      name.append(i)
       count += 1
     else:
-      if(type(name[1]) == str and type(name[2]) == str):
+      if(len(name) > 2):
         ans += name[0] + " "
         ans += name[1] + ", "
       else:
@@ -20,8 +17,7 @@ def reports(xs):
       sum += i
       total += 1
       count = 0
-      name = [Undefined,Undefined,Undefined]
+      name = []
   return ans + "averaged " + str(sum/total)
-
 
 print(reports(["Jill", "Johnson", 87, "Billy", "Ray", "Cyrus", 78, "Rita", "Yeats", 94, "Bobbie", "Sue", "Palmer", 72]))
