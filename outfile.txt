@@ -10,4 +10,16 @@ listening
 have
 a
 good
+dayhello
+my 
+name
+is 
+jerry
+i like to use new lines
+thanks
+for 
+listening
+have
+a
+good
 day
