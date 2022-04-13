@@ -1,0 +1,4 @@
+after local assingment: test spam
+after nonlocal assingment: nonlocal spam
+after global assingment: nonlocal spam
+in global scope: global spam
