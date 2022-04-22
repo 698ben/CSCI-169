@@ -1,8 +1,8 @@
 package P2;
 import java.util.Date;
 
-public class main {
-  public static void main(String[] args)
+class Main {
+  public static void main(String args[])
   {
     Date d = new Date(2000000000);
     Food gum = new Food("gum");

@@ -1,4 +1,4 @@
-class HW3P1
+class HW3P1Chittenden
 {
   static int INPUT_SIZE = 10;
 // A simple print function
