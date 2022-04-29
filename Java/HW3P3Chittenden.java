@@ -31,7 +31,7 @@ class Main
         q.insert(58);
         q.insert(32);
         q.insert(40);
-        q.print();
+        //q.print();
     }
 
 }

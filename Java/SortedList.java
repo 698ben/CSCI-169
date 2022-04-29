@@ -1,4 +1,6 @@
-class SortedList{
+import java.util.Iterator;
+
+class SortedList implements Iterable{
     private int array[];
     public SortedList(int arr[]){
       array = arr.clone();
@@ -78,4 +80,38 @@ class SortedList{
     }
     System.out.println();
   }
+
+
+  public SortedListIterator iterator() {
+    return new SortedListIterator(array);
+  }
+}
+
+class SortedListIterator implements Iterator<Integer>
+{
+  private int[] arr;
+  private int index;
+  SortedListIterator(int[] arr)
+  {
+    this.arr = arr;
+    index = 0;
+  }
+
+
+  public boolean hasNext() {
+    if(index + 1 > arr.length)
+    {
+      return false;
+    }else
+    {
+      return true;
+    }
+  }
+  public Integer next() {
+    int temp = arr[index];
+    index++;
+    return temp;
+
+  }
+
 }
