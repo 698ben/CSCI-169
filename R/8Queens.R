@@ -1,5 +1,6 @@
 index <- function(arr, search) {
-  for (x in seq_len(arr)) {
+  for (x in seq(length(arr))) {
+    #print(arr)
     if (arr[x] == search) {
       return(x)
     }
@@ -10,26 +11,26 @@ index <- function(arr, search) {
 confilict <- function(stack, point) {
   x <- FALSE
   for (Lpoint in stack) {
-    if (stack.index(Lpoint) == point[0] | Lpoint == point[1]) {
+    if (match(Lpoint, stack) == point[[1]] | Lpoint == point[[2]]) {
       x <- TRUE
     }
   }
-  yint <- -point[1] + point[2]
+  yint <- (-1 * point[[1]]) + point[[2]]
   index <- 0
   for (i in c(0:8)) {
-    index <- index(stack, i + yint)
-    if (index != -1) {
-        if (i != point[0] && i == index) {
+    indexj <- index(stack, i + yint)
+    if (indexj != -1) {
+        if (i != point[[1]] && i == indexj) {
           x <- TRUE
           break
         }
     }
   }
-  yint <- point[1] + point[2]
-  for (i in range(0, 8)) {
-    index <- index(stack, -i + yint)
-    if (index != -1) {
-      if (i != point[0] && i == index) {
+  yint <- point[[1]] + point[[2]]
+  for (i in c(0:8)) {
+    indexj <- index(stack, -i + yint)
+    if (indexj != -1) {
+      if (i != point[[1]] && i == indexj) {
         x <- TRUE
         break
       }
@@ -38,50 +39,57 @@ confilict <- function(stack, point) {
   return(x)
 }
 nqueens <- function(arr, n, count = 1) {
-  point <- c(count, 0)
-  if (count == n - 1) {
+  point <- list(count, 0)
+  if (count == n) {
     while (confilict(arr, point)) {
-      point[2] <- point + 1
+      point[[2]] <- point[[2]] + 1
     }
-    if (point[1] >= 8) {
-      return(FALSE)
+    if (point[[2]] >= 8) {
+      return(list(FALSE, arr))
     }
     else {
-      append(arr, point[2])
-      return(TRUE)
+      arr <- append(arr, point[[2]])
+      return(list(TRUE, arr))
     }
   }
   else{
-    if (count != 0) {
+    if (count != 1) {
       while (confilict(arr, point)) {
-        point[2] <- point + 1
+        point[[2]] <- point[[2]] + 1
       }
     }
-    if (point[1] < 8) {
-      append(arr, point[2])
-      while (not(nQueens(arr, n, count + 1))) {
-        arr <- arr[-length(arr) - 1]
-        point[2] <- point + 1
+    if (point[[2]] < 8) {
+      arr <- append(arr, point[[2]])
+      recurse <- nqueens(arr, n, count + 1)
+      arr <- recurse[[2]]
+      while (!(recurse[[1]])) {
+        arr <- arr[- (length(arr))]
+        point[[2]] <- point[[2]] + 1
         while (confilict(arr, point)) {
-          point[2] <- point + 1
+          point[[2]] <- point[[2]] + 1
         }
-        if (point[2] >= 8) {
-          return(FALSE)
+        if (point[[2]] >= 8) {
+          return(list(FALSE, arr))
         }
         else{
-          append(arr, point[2])
+          arr <- append(arr, point[[2]])
         }
+        recurse <- nqueens(arr, n, count + 1)
+        arr <- recurse[[2]]
       }
-      return(TRUE)
+      return(list(TRUE, arr))
     }
     else{
-      return(FALSE)
+      return(list(FALSE, arr))
     }
   }
 }
-      
-ans <- c()
-nqueens(ans, 8)
-print(ans)
 
-seq_len(arr)
+
+start <- c()
+ans <- nqueens(start, 8)
+
+# print(length(ans))
+# print(length(0:6))
+plot(0:7, ans[[2]], pch = 15, cex = 4, xlab = "colums", ylab = "rows")
+grid(NULL, NULL, lwd = 1, lty = 1)
