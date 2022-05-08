@@ -1,0 +1,1 @@
+scalac HW6-1-5Chittenden.scala && scala HW6_1_5Chittenden 
